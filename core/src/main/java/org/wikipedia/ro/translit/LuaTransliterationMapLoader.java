@@ -20,7 +20,7 @@ import java.util.Map;
 public final class LuaTransliterationMapLoader {
 
     private static final String USER_AGENT =
-            "icu4j-wikipedia-translit/1.0 (https://github.com/wikipedia-ro/icu4j-wikipedia-translit)";
+            "icu4j-wikipedia-translit/1.0 (https://github.com/andreistroe/icu4j-wikipedia-translit)";
     private static final int CONNECT_TIMEOUT_MS = 10_000;
     private static final int READ_TIMEOUT_MS = 30_000;
 
