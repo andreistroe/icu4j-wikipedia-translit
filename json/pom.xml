@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.wikipedia.ro</groupId>
+    <groupId>io.github.andreistroe</groupId>
     <artifactId>icu4j-wikipedia-translit</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
@@ -11,7 +11,7 @@
   <name>icu4j-wikipedia-translit-json</name>
   <dependencies>
     <dependency>
-      <groupId>org.wikipedia.ro</groupId>
+      <groupId>io.github.andreistroe</groupId>
       <artifactId>icu4j-wikipedia-translit-core</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
