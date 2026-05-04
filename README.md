@@ -35,7 +35,7 @@ Then declare the core dependency in your `pom.xml`:
 <dependency>
   <groupId>org.wikipedia.ro</groupId>
   <artifactId>icu4j-wikipedia-translit-core</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0</version>
 </dependency>
 ```
 
@@ -45,8 +45,23 @@ If you also need JSON loading support, add the optional JSON module:
 <dependency>
   <groupId>org.wikipedia.ro</groupId>
   <artifactId>icu4j-wikipedia-translit-json</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0</version>
 </dependency>
+```
+
+The repository also includes a `samples` module with runnable examples for two common
+use cases:
+
+- loading a live Wikipedia Lua module
+- loading bundled JSON maps from inside the application
+
+Run them from the repository root:
+
+```bash
+mvn -pl samples -am -DskipTests install
+cd samples
+mvn exec:java -Dexec.mainClass=org.wikipedia.ro.translit.samples.WikipediaModuleSample
+mvn exec:java -Dexec.mainClass=org.wikipedia.ro.translit.samples.InternalJsonSample
 ```
 
 ---
