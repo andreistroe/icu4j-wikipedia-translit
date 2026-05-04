@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.wikipedia.ro</groupId>
+    <artifactId>icu4j-wikipedia-translit</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <artifactId>icu4j-wikipedia-translit-samples</artifactId>
+  <name>icu4j-wikipedia-translit-samples</name>
+  <dependencies>
+    <dependency>
+      <groupId>org.wikipedia.ro</groupId>
+      <artifactId>icu4j-wikipedia-translit-core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.wikipedia.ro</groupId>
+      <artifactId>icu4j-wikipedia-translit-json</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.3.0</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
